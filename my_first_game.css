@@ -1,0 +1,224 @@
+body{
+	background: linear-gradient(rgb(64, 64, 168), rgb(241, 38, 38));
+	/*background-color: rgb(1, 0, 5);*/
+	/*background-color:rgb(4,2,333);*/
+	background-repeat: no-repeat;
+	
+
+}
+.Central-panel{
+	box-shadow: 10px 10px 5px rgb(0, 0, 0, 0.2);
+	display:inline-block;
+    position:absolute;
+	border:solid black 4px;
+	border-radius: 4px;
+	background-color: ivory;
+	width:40%;
+	height:80%;
+	top:10vh;
+	left:29vw;
+	z-index:1;
+	
+}
+
+.Player-1_panel{
+	display:inline-block;
+	position:relative;
+	background-color: rgb(209, 66, 73);
+	/*background-color: lightblue;*/
+	width:49.99%;
+	height:100%;
+	text-align:center;
+	margin:0px;
+	}
+.Player-2_panel{
+	
+	display:inline-block;
+	position:relative;
+	background-color: rgb(103, 63, 177);
+	width:49.99%;
+	height:100%;
+	text-align:center;
+	float:right;
+	}
+.buttons{
+	box-sizing: border-box;
+	display: inline-block;
+	position:absolute;
+	font-size: 20px;
+	margin:0% 45%;
+	text-align:center;
+	z-index:2;
+	border-radius: 5px;
+}
+.button_class{
+	border:solid black;
+	border-radius: 5px;
+	font-family: sans-serif;
+	background-color: slateblue;
+	padding:8px;
+	font-size:15px;
+	font-weight: bold;
+}
+.button_class:hover{
+	border-radius: 10px;
+}
+
+#New-game_button{
+	
+	position: absolute;
+	left:0vw;
+	top:3vh;
+	z-index:6;
+}
+#New-game_button_2,#New-game_button_1{
+	margin:0% 45%;
+	position: absolute;
+	left:0vw;
+	top:3vh;
+	z-index:6;
+	padding:18px;
+	font-size:20px;
+	left:-2.5vw;
+}
+#Roll-dice_button{
+	position:relative;
+	top:40vh;
+}
+#Hold_button{
+	box-sizing:border-box;
+	position:relative;
+	top:44vh;
+	padding-top: 6px;
+	line-height: 2vh;
+	
+	
+}
+.message{
+	font: outline gold;
+	font-family: sans-serif;
+}
+
+img{
+	display:inline-block;
+	position:absolute;
+	z-index:2;
+	width:15%;
+	height:15%;
+	border:solid 1px;
+}
+#image-1{
+	margin:0% 43%;
+	top:13vh;
+}
+#image-2{
+	margin:0% 43%;
+	top:26vh;
+}
+.Player_name{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:180%;
+	text-transform: uppercase;
+	position:absolute;
+	top:6vh;
+	left:6.5vw;
+}
+.Current-score_Player{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+	position:relative;
+	top:20vh;
+}
+
+.Current-score_display_Player{
+	box-sizing: border-box;
+	position:relative;
+	top:25vh;
+	padding-top: 10px;
+	font-size: 30px;
+	border:solid black 2px;
+	border-radius: 10%;
+	color:red;
+	font-weight: bolder;
+}
+#Current-score_display_Player_1{
+	display:inline-block;
+	background-color: lightcyan;
+	width:20%;
+	height:10%;
+	
+}
+#Current-score_display_Player_2{
+	display:inline-block;
+	background-color: lightcyan;
+	width:20%;
+	height:10%;
+}
+.final-score_Player_text{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	position:relative;
+	top:35vh;
+}
+.Final-score_display_player{
+	position:relative;
+	font-size: 35px;
+	font-weight: bolder;
+	border:solid black 2px;
+	border-radius: 10%;
+	color:rgb(34, 12, 4);
+	display:inline-block;
+	background-color: lightcyan;
+	top:40vh;
+	box-sizing: border-box;
+	padding-top: 6px;
+	width:20%;
+	height:10%;
+}
+#Winning_score_value{
+	position:absolute;
+	display:inline-block;
+	top:64vh;
+	left:-4vw;
+	width:330%;
+	height:40%;
+	text-transform:capitalize;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 125%;
+	font-variant-numeric: slashed-zero;
+}
+
+.winner{
+	box-sizing: border-box;
+	background-color: red;
+	position: absolute;
+	text-align: center;
+	width:99.9%;
+	height:100%;
+	z-index:5;
+	border: solid 10px gold;
+	padding-top: 30%;
+	font-size: 200%;
+	display:none;
+}
+
+.winplayer{
+	font-size: 200%;
+	font-family: sans-serif;
+}
+
+.active{
+	position: absolute;
+	display:inline-block;
+	color:red;
+	font-size:800%;
+	text-align: center;
+	top:-1vh;
+	z-index:5;
+}
+
+#win_text{
+	font-size: 180%;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	padding-top: 5px;;
+}

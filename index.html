@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		
+		<title>Dice Game</title>
+		<link rel='stylesheet' href="my_first_game.css">
+		<link rel="icon" href="dice-favicon-white.jpg">
+		<script src="my_first_game.js"></script>
+	</head>
+	<body onload="init()" >
+		<div class="Central-panel">
+			<div id="winner_1" class="winner"><button class="button_class" id="New-game_button_1" onclick="init()">New Game</button><br><span class="message" >Congratulations!<br><br><div class="winplayer" id = "winplayer_1">Player-1 </div><br><br>You won</span></div>
+			<div id="winner_2" class="winner"><button class="button_class" id="New-game_button_2" onclick="init()">New Game</button><br><span class="message" >Congratulations!<br><br><div class="winplayer" id = "winplayer_2">Player-2 </div> <br><br>You won</span></div>
+			<div class="buttons">
+			<button class="button_class" id="New-game_button" onclick="init() ; editNames()">New Game</button><br>
+			<button class="button_class" id="Roll-dice_button" onclick="rolldice()">Roll Dice</button><br>
+			<button class="button_class" id="Hold_button" onclick="hold()" >Hold &nbsp;</button><br>
+			<!--<input type="number" id="Winning_score_value" ondragenter="winner_input()" 
+				placeholder="   Enter winning score.  " min=20 max=1000/>--->
+			<span id="Winning_score_value">Winning-Score<br> <div id="win_text">100!</div><br> </span>
+			</div>
+			<div class="Dices">
+				<img id="image-1" src="images/dice-1.png" alt="dice1" />
+				<img id="image-2"src="images/dice-2.png" alt="dice1" />
+
+
+			</div>
+
+			<div id="Player-1"class="Player-1_panel">
+				<span class="Player_name" id = "player_1_name">Player 1</span><span class="active" id="active_1">.</span>
+				<div class="Current-score_Player">Current Score</div>
+				<div id="Current-score_display_Player_1" class="Current-score_display_Player 1">0</div>
+				<div class="final-score_Player_text">SCORE</div>
+				<div id="Final-score_display_player_1"class="Final-score_display_player">0</div>
+			</div>
+
+			<div id="Player-2" class="Player-2_panel">
+				<span class="Player_name" id = "player_2_name">Player 2</span><span class="active" id="active_2">.</span>
+				<div class="Current-score_Player">Current Score</div>
+				<div id="Current-score_display_Player_2" class="Current-score_display_Player 2">0</div>
+				<div class="final-score_Player_text">SCORE</div>
+				<div id="Final-score_display_player_2" class="Final-score_display_player">0</div>
+
+
+			</div>
+		</div>
+	</body>
+</html>
